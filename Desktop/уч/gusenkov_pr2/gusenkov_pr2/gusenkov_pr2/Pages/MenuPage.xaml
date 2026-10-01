@@ -1,0 +1,21 @@
+﻿<Page x:Class="gusenkov_pr2.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gusenkov_pr2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MenuPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Главное меню навигации" FontSize="22" Margin="0,0,0,20" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+            <Button x:Name="btnOpenTask1" Content="Задача 1" Width="180" Height="35" Margin="5" Click="btnOpenTask1_Click"/>
+            <Button x:Name="btnOpenTask2" Content="Задача 2" Width="180" Height="35" Margin="5" Click="btnOpenTask2_Click"/>
+            <Button x:Name="btnOpenTask3" Content="Задача 3" Width="180" Height="35" Margin="5" Click="btnOpenTask3_Click"/>
+            <Button x:Name="btnOpenTask4" Content="Задача 4" Width="180" Height="35" Margin="5" Click="btnOpenTask4_Click"/>
+            <Button x:Name="btnOpenTask5" Content="Задача 5" Width="180" Height="35" Margin="5" Click="btnOpenTask5_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

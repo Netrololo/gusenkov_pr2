@@ -1,0 +1,43 @@
+﻿<Page x:Class="gusenkov_pr2.Pages.Task5Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gusenkov_pr2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Task5Page">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Задача 5. Генерация и сортировка двумерного массива (от -10 до 10)." FontSize="14" FontWeight="Medium" Margin="0,0,0,10"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Content="Строк (N):" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbRows" Text="4" Width="40" Margin="5,0,15,0" VerticalContentAlignment="Center"/>
+            <Label Content="Столбцов (M):" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbCols" Text="4" Width="40" Margin="5,0,15,0" VerticalContentAlignment="Center"/>
+            <Button x:Name="btnGenerate" Content="Сгенерировать и отсортировать" Padding="10,0" Click="btnGenerate_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="txtExtremums" Grid.Row="2" FontSize="13" FontWeight="SemiBold" Foreground="#333333" Margin="0,5"/>
+
+        <UniformGrid Grid.Row="3" Columns="3" Margin="0,10,0,0">
+            <GroupBox Header="1. Исходная матрица">
+                <DataGrid x:Name="dgOriginal" HeadersVisibility="None" IsReadOnly="True" GridLinesVisibility="All"/>
+            </GroupBox>
+            <GroupBox Header="2. Сортировка по возрастанию">
+                <DataGrid x:Name="dgAsc" HeadersVisibility="None" IsReadOnly="True" GridLinesVisibility="All"/>
+            </GroupBox>
+            <GroupBox Header="3. Сортировка по убыванию">
+                <DataGrid x:Name="dgDesc" HeadersVisibility="None" IsReadOnly="True" GridLinesVisibility="All"/>
+            </GroupBox>
+        </UniformGrid>
+    </Grid>
+</Page>

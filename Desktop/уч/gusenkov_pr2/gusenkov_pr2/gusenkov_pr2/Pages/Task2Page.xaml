@@ -1,0 +1,51 @@
+﻿<Page x:Class="gusenkov_pr2.Pages.Task2Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gusenkov_pr2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Task2Page">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock x:Name="txtTaskDescription2" 
+                       Text="Задача 2. Изменение регистра букв." 
+                       TextWrapping="Wrap" 
+                       FontSize="14" 
+                       FontWeight="Medium" 
+                       Margin="0,0,0,15" 
+                       Foreground="#333333"/>
+
+            <Label Content="Введите строку-предложение на русском языке:" FontSize="12" Margin="0,0,0,2"/>
+            <TextBox x:Name="tbInputData2" 
+                     Width="500" 
+                     HorizontalAlignment="Left" 
+                     Height="28" 
+                     Margin="0,0,0,15" 
+                     VerticalContentAlignment="Center" 
+                     FontSize="13"/>
+
+            <Button x:Name="btnCalculate2" 
+                    Content="Преобразовать регистр" 
+                    Width="180" 
+                    Height="32" 
+                    HorizontalAlignment="Left" 
+                    Margin="0,0,0,15" 
+                    Click="btnCalculate2_Click"/>
+
+            <Label Content="Результат обработки текста:" FontSize="12" Margin="0,0,0,2"/>
+            <TextBox x:Name="tbResultData2" 
+                     Width="500" 
+                     HorizontalAlignment="Left" 
+                     Height="150" 
+                     IsReadOnly="True" 
+                     TextWrapping="Wrap" 
+                     VerticalScrollBarVisibility="Auto"
+                     Background="#F9F9F9" 
+                     Padding="5" 
+                     FontSize="13"/>
+        </StackPanel>
+    </Grid>
+</Page>
